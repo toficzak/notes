@@ -130,6 +130,43 @@ Policies for using and sharing objects in a concurrant program:
  - Shared thread-safe - thread-safe object performs sync internally, many threads can access freely through public interface
  - Guarded - guarded object can be accessed onyl with a specific lock held. 
 
+---
+
+Encapsulation - allows to determine if class is thread-safe without examining whole program
+
+Design process:
+ - identify variables that form the object's state
+ - identify the invariants that constrain the state variable
+ - establish policy for managing concurrent access to the object's state
+
+state of object - all its fields and fields of referenced object fields
+
+`synchronization policy` - how object's state can be accessed without violating its invariants or postconditions. Specifies what combination of immuability, thread confinement and locking is used for thread safety and which variables are guarded by lock  # who does that ?:
+
+monitor pattern - used to enforce single-threaded access to data. Only one thread at a time is allowed to execute code within the monitor object. Use the Monitor pattern when:
+ - we have a shared resource and there is critical section
+ - you want to create thread-safe objects
+ - you want to achieve mutual exclusion in high level programming language
+
+`state space` - a range of possible states object/variable can have. The smaller the state, the smaller complexity.
+
+Classes have invariants, those divide states on valid and invalid.
+
+operations can have postconditions that identify certain `state transitions` as valid/invalid.
+
+Multivariable invariants create atomicity requirements: related variables must be fetched or updated in a single atomic operation. State must be always valid.
+
+`state-dependent operation` - there is state precondition to execute operation. Connected with waiting for conditions to become true. Standard built-in mechanism for this is `wait` and `notify`, but they are bound to intristic locking and are difficult. Easier to use `BlockingQueue`, `Semaphore` or other `synchronizers`.
+
+
+
+
+
+
+ 
+
+
+
 
 
 
