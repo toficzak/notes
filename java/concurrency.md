@@ -158,8 +158,16 @@ Multivariable invariants create atomicity requirements: related variables must b
 
 `state-dependent operation` - there is state precondition to execute operation. Connected with waiting for conditions to become true. Standard built-in mechanism for this is `wait` and `notify`, but they are bound to intristic locking and are difficult. Easier to use `BlockingQueue`, `Semaphore` or other `synchronizers`.
 
+There are many types of confinement:
+ - to class instance (private class member)
+ - lexical scope (local variable)
+ - thread (object pass from method to method within thread, but not supposed to be shared)
 
+Basic collection classes are not thread-safe, but Collections.synchronizedList() and other do. They use decorator pattern to wrap the collection with a synchronized wrapper object, it implements all methods of an interface as a synchronized method that forwards calls to thew underlying implementation. So underlying collection in confined to the wrapper.
 
+## Java monitor pattern
+
+java monitor pattern - object following it encapsulates all its mutable state and guards it with object's own intristic lock.
 
 
 
