@@ -169,7 +169,7 @@ Basic collection classes are not thread-safe, but Collections.synchronizedList()
 
 java monitor pattern - object following it encapsulates all its mutable state and guards it with object's own intristic lock.
 
-
+Private locks are cool, no external object can participate in its synchronization policy.
 
  
 
