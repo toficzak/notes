@@ -1,0 +1,7 @@
+show databases - self explanatory
+user <database> - like \c in psql
+db.<document_name>.
+	- find({}) - findAll, filters in parenthesis
+	- countDocuments({}) - self explanatory
+db - shows documents in database I guess
+
