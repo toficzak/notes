@@ -1,0 +1,79 @@
+- https://medium.com/codex/how-to-persist-and-backup-data-of-a-postgresql-docker-container-9fe269ff4334
+- [https://use-the-index-luke.com](https://use-the-index-luke.com/)
+- https://www.baeldung.com/cs/decision-trees-20-questions?fbclid=IwAR3SwhxyjoZcptszUO3HoyLtzmHQdJEM8GCgCo0mbS_PT6Oz-6MXL31uWq8
+- 
+- https://www.initgrep.com/posts/java/spring/spring-security-oauth2-jwt-authentication-resource-server
+- https://en.wikipedia.org/wiki/Server-sent_events
+- https://www.cnet.com/personal-finance/crypto/what-is-bitcoin/?ServiceType=facebook_page&ftag=COS-05-10aaa0a&UniqueID=C591E04A-5E3B-11EC-891E-D7FD923C408C&TheTime=2021-12-16T06%3A45%3A35&PostType=link&fbclid=IwAR0gZ4V9kVsRUd2fHNexWVNt7q2kQi0XRT0XQFeKSkIqXkRSmJsbagcaqqM
+- https://www.baeldung.com/cs/prim-algorithm?fbclid=IwAR1lNOSITXj5WKdgbnlZ-V1hVLeEK-Gmz88mHo_PG1VVFFys9rFuaDDaM3o
+- https://dev.to/javinpaul/why-every-developer-should-learn-docker-in-2022-2ndi?utm_source=dlvr.it&utm_medium=facebook
+- https://www.freecodecamp.org/news/how-to-stay-gdpr-compliant-with-access-logs
+- [Wprowadzenie do informatyki kwantowej](https://www.youtube.com/watch?v=U7NDyGTDxSI)
+- Code review practices
+
+[Code Review Practices: It's Not as Difficult as You Think](https://ayodejiayankola.medium.com/code-review-practices-its-not-as-difficult-as-you-think-d4bcdac653bc)
+
+[Subquery in SQL | Correlated Subquery + Complete SQL Subqueries Tutorial](https://www.youtube.com/watch?v=nJIEIzF7tDw)
+
+- https://www.baeldung.com/java-weekly-430?fbclid=IwAR3mhVRziQgqLpAElCoG1iXiBI4ljdAYU8MCotT3__KAzoYwQc1ikWJEOaQ
+
+https://medium.com/codex/how-to-persist-and-backup-data-of-a-postgresql-docker-container-9fe269ff4334
+
+https://arctype.com/
+
+https://www.coursera.org/learn/google-cloud-java-spring?action=enroll&authMode=signup&irclickid=UcyW56Q-cxyIRUUVvU33S3P3UkD2T0UICzZC3w0&irgwc=1&utm_campaign=3294490&utm_content=b2c&utm_medium=partners&utm_source=impact
+
+https://www.freecodecamp.org/news/how-to-stay-gdpr-compliant-with-access-logs/
+
+- https://www.marcobehler.com/guides/spring-framework
+- https://www.marcobehler.com/guides/spring-boot-autoconfiguration
+- jms - java message service
+- https://valyala.medium.com/prometheus-storage-technical-terms-for-humans-4ab4de6c3d48
+- https://javadevpro.kodolamacz.pl/?utm_source=facebook&utm_medium=social_cpc&utm_content=javadevpro19092022&utm_campaign=jdp_1
+- https://helion.pl/ksiazki/zrownowazony-kod-dobre-praktyki-i-heurystyki-dla-inzynierow-oprogramowania-mark-seemann,kodkto.htm#format/d
+- throben projections in spring
+- https://blog.allegro.tech/2022/10/probabilistic-algorithms.html
+- https://linuxhint.com/install_wireshark_ubuntu/
+- https://www.nordtheme.com/
+- go
+    - https://www.codewars.com/post/quick-start-guide-golang-for-beginners
+    - https://www.codewars.com/kata/5262119038c0985a5b00029f/solutions/go
+- service locator pattern
+
+[Szacowanie wielkości potęg 2](https://www.notion.so/Szacowanie-wielko-ci-pot-g-2-170472eb899846579fb8fd9eb91cf699?pvs=21)
+
+[Spring vs Hibernate Example](https://examples.javacodegeeks.com/enterprise-java/spring/spring-vs-hibernate-example/)
+
+[Microservice Design Patterns - Java Code Geeks - 2022](https://www.javacodegeeks.com/2015/04/microservice-design-patterns.html)
+
+https://github.com/goldbergyoni/nodebestpractices
+
+[Protokół http - podstawy](https://sekurak.pl/protokol-http-podstawy/)
+
+[Protokół HTTP/2 - czyli szybciej, ale czy również bezpieczniej?](https://sekurak.pl/protokol-http-2-czyli-szybciej-ale-czy-rowniez-bezpieczniej/)
+
+[](https://www.udemy.com/course/restful-web-services-with-spring-framework-a-quick-start/)
+
+[Hacking Livestream #83: Google CTF Beginners Quest 2019](https://www.youtube.com/watch?v=W-fJyuGlb4c)
+
+[Simple Timetable App Built with React Native](https://morioh.com/p/7a2a0b09ad30)
+
+[](https://www.baeldung.com/spring-rest-json-patch)
+
+[How to become a better Java Programmer? Tips, Framework, Tools, and Libraries to Learn in 2023](https://javarevisited.blogspot.com/2016/01/how-to-become-better-java-developer.html)
+
+[10 Best Java Development Tools You Can Learn in 2023 [UPDATED]](https://javarevisited.blogspot.com/2019/02/10-tools-advanced-java-developers-should-know.html)
+
+[Secure Service-to-Service Spring Microservices with HTTPS and OAuth 2.0](https://morioh.com/p/e3a768e3913d)
+
+[Understanding Linux Directory Structure and Important Files](https://www.tecmint.com/linux-directory-structure-and-important-files-paths-explained/)
+
+[](https://www.udemy.com/course/object-oriented-programming-using-java-and-intellij-hands-on/)
+
+System design questions: 
+
+[Log in or sign up to view](https://www.facebook.com/javarevisited/posts/pfbid0xbW98eE2N9Cvv46d6AwT4eF2TmRr1Dwu2G9PxnrjicWpuTmbLL7ct9Z2mLh4VwwSl)
+
+[SQL](https://morioh.com/topic/sql)
+
+[Top 50+ SQL Interview Questions and Answers](https://morioh.com/p/ddcbd3fe4983)

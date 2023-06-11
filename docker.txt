@@ -1,0 +1,4 @@
+Ustawienia strefy czasowej przez Dockera:
+`ENV TZ=Europe/Copenhagen`
+
+[How to set timezone inside alpine base docker image?](https://stackoverflow.com/questions/68996420/how-to-set-timezone-inside-alpine-base-docker-image)

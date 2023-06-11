@@ -1,0 +1,11 @@
+certbot certificates
+
+certbot renew --dry-run
+
+certbot renew - only renew certificate, not creating new
+
+certbot -apache - creates apach~~we~~e certificate
+
+apachectl configtest - validates configuration
+
+systemctl reload https - restart apache

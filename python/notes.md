@@ -1,3 +1,7 @@
+## Contains
+
+Wbudowane typy sekwencyjne (list, tuple, range) implementują metodę `__contains__()', co pozwala wyszukiwać w kolekcjach za pomocą operatora `in`.
+
 ## Regex
 
 Module:
