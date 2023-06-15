@@ -1,4 +1,21 @@
 ---
+Cupid
+
+- c - composable - easy to use, reuse
+    - the smaller area, the less things to go bad, API has smaller degree, is easier
+    - keep API - intention revealing
+    - minimal dependencies
+- u - unix like - robić jedną rzecz dobrze
+- p - predictable - behave as expected, and should be deterministic and observable.
+- i - idiomatic - Writing “code that humans can understand” means writing code for someone else
+- d - Domain-based
+
+---
+Cohesion
+
+How much class is focused on one goal. High cohesion is always preferred, therefore smaller classes with singular focus.
+
+---
 
 I have always created kind of a logs. They are more or less organized dump of my thoughts mixed with new knowledge.
 I kept kind of journal in multiple programs, started with something called `Joplin`, then moved to many different 

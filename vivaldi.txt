@@ -1,0 +1,2 @@
+artefakty w tabach:
+vivaldi://flags/#enable-gpu-rasterization - disable

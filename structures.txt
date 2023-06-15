@@ -1,0 +1,289 @@
+---
+Trees
+
+Binary Search Tree - good for searching, subset of binary tree, preserves hierarchy
+
+Rules:
+
+- nodes on the right of current node are increasing/ to the left decreases
+- node can have up to 2 children (from binary tree prop)
+
+No iterating - binary search
+
+Balanced search trees have O(logn) complexity, unbalanced - O(n) - it will iterate over all nodes, making it a linked list😞
+
+AVL Tree/Red-Black Tree makes sure binary search tree is balanced
+
+Pros of BST:
+
+- O(logn) better then O(n) (assuming its balanced)
+- ordered
+- flexible size
+- hierarchy
+
+Cons of BST:
+
+- no O(1) operations - BST are not fastest on anything
+
+Trees have:
+
+- root
+- parents
+- children
+- siblings - all on the same level
+- leaves
+
+Singly Linked list is a tree with one way to traverse
+
+Binary search tree
+
+- lookup O(logn)
+- insert O(logn)
+- delete O(logn)
+
+Binary tree rules:
+
+- each node have one parent (excluding root)
+- each node has zero/one/two children
+
+Perfect binary tree:
+
+- zero/two children per node
+- number of total nodes doubles as we go down the tree
+- amount of nodes on given level is equal to all nodes on all previous levels + 1 - over half of all nodes are at the lowest level -> if we can avoid getting to the lowest level - efficiency
+
+Full binary tree:
+
+- always 0 or 2 children
+
+Log n - divide & conquer, looking through a phone book, the height of a perfectly balanced tree
+
+
+--- 
+Stack and queue
+
+No random access operations.
+
+Stack is LIFO
+
+lookup O(n)
+
+pop O(1)
+
+push O(1)
+
+peek O(1)
+
+Queue is FIFO
+
+lookup O(n)
+
+enqueue O(1)
+
+dequeue O(1)
+
+peek O(1)
+
+For both we rather not use lookups.
+
+**Implement queue using stacks ????**
+
+Fast operations, fast peeks, ordered
+
+Slow lookups, but no one uses it for that
+
+---
+Others
+
+Linked List
+
+---
+
+Linked list are 'null terminated'.
+
+No indices = no shifting
+
+prepend - O(1)
+
+append - O(1)
+
+insert - O(n)
+
+delete = O(n)
+
+traversal/lookup - O(n)
+
+Reversing single linked list in same structure
+
+def reverse_self(self):
+
+if self.head.next != None:
+
+first = self.head
+
+self.tail = self.head
+
+second = first.next
+
+while second != None:
+
+temp = second.next  # technically the third in list, might be None
+
+# since there is link to second.next above, set second to point to first
+
+second.next = first
+
+first = second  # first is connected to the second in proper way, can iterate further
+
+second = temp  # second becomes third, might be None
+
+# remove very first connection, must be done here, otherwise all information would be lost
+
+self.head.next = None
+
+self.head = first  # first becomes ultimately the last element, since second will become None
+
+Reversing as new structure
+
+def reverse(self):
+
+node = self.head
+
+llist = LinkedList(node.value)
+
+while node.next != None:
+
+node = node.next
+
+llist.prepend(node.value)
+
+return llist
+
+Singly-linked list:
+
+Pros: Simple in implementation, requires relatively lesser memory for storage, assuming you need to delete/insert (at) next node – deletion/insertion is faster.
+
+Cons: Cannot be iterated in reverse, need to maintain a handle to the head node of the list else, the list will be lost in memory. If you’re deleting previous node or inserting at previous node, you will need to traverse list from head to previous node to be able to carry out those operations – O(N) time.
+
+- -So, this should be used when you have lesser memory and your main goal is insertion/deletion and not searching elements.
+
+Doubly-linked list:
+
+Pros: Can be iterated in forward as well as reverse direction. In case of needing to delete previous node, there is no need to traverse from head node, as the node to be deleted can be found from ‘.previous’ pointer.
+
+Cons: Relatively complex to implement, requires more memory for storage (1 ‘.previous’ pointer per node). Insertions and deletions are relatively more time consuming (assigning/reassigning ‘.previous’ pointer for neighbor nodes)
+
+- -This should be used when you have no or minimal limitations on memory, and your main goal is to search for elements.
+
+Hash Tables
+
+Other names: hash maps/maps/unordered maps/dictionaries
+
+Interestingly in JavaScript HashMaps are just objects
+
+Arrays have ordered indices, maps have key-value, key is obtained through hash function.
+
+Hash function - function that generates value of fixed length for each input it gets. It's the same for the same input. Also no idea how to recreate original input. This is impodent.
+
+Examples of types of hash functions:
+
+- md5
+- sha1
+- sha256
+
+Hashing is assumed to be O(1).
+
+Hash Tables:
+
+- insert O(1)
+- lookup O(1) - O(n) when collision occures
+- delete O(1)
+- search O(1)
+
+Hash tables works on buckets.
+
+Problems:
+
+- collision - same hash from two entries, bucket becomes linked list pointing to next entry. Slows down read/write to O(n)
+- keys() method loops through all
+
+Quick access to certain values, like database. Fast insert (when no collision, we usually assumes O(1))/delete.
+
+Pros:
+
+- fast lookups*
+- fast inserts
+- flexible keys
+
+Cons:
+
+- unordered
+- slow key iteration
+
+---
+
+Arrays pros:
+
+- fast lookup
+- fast pop/push
+- ordered
+
+Arrays cons:
+
+- slow insert/deletion (all elements must be rearranged)
+- static size (if static)
+
+String should be considered as array
+
+Traversal - access each element exactly once
+
+https://drive.google.com/file/d/1avZcLZCgb-_IxRGmpkkGk0_ma3IRGPBw/view?usp=sharing
+
+Big O notation
+
+- O(n) - pętla for -> linear time [fair]
+- O(1) - const time, always do the same no matter of input size [excellent]
+
+Rules:
+
+1. Worst case
+2. Remove constants
+3. Different terms for inputs
+4. Drop non dominants
+
+Big O only cares about worst case
+
+Rule 3: kilka inputów może być różnych, więc gdy dwie różne kolekcje w inpucie i po jednym forze na każdą -> n + m
+
+Gdy nested loops - mnożenie - quadratic time n^2/n^3
+
+Do zapamiętania -> różne wcięcia - mnożenie -> nested
+
+O(n!) - factorial time, pętla na każdy element inputu😮 Prawdopodobnie nigdy się z tym nie spotkam
+
+Code must be:
+
+- readable
+- memory (space complecity)
+- speed (time complexity)
+
+In that order
+
+Space complexity is only about variables added in method, not input.
+
+Skills desired
+
+- analytic
+- coding
+- technical
+- communication
+
+typical nested loop solution -> hash tables
+
+nested loops of two arrays -> a*b (1000 * 1000 = 1 000 000)
+
+two separate loops -> a+b (1000 + 1000 = 2 * 1000)
+
+Cheatsheet
+
+https://drive.google.com/file/d/1L2kby2BXn7d_7tkgRyQZjUU1IZXHyv73/view?usp=sharing

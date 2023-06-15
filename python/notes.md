@@ -1,3 +1,33 @@
+## Contains
+
+Wbudowane typy sekwencyjne (list, tuple, range) implementują metodę `__contains__()', co pozwala wyszukiwać w kolekcjach za pomocą operatora `in`.
+
+## Regex
+
+Module:
+
+```
+import re
+```
+
+Simple usage:
+```
+  file = open("input.txt", "r")
+
+    pattern = re.compile("(\\d+)-(\\d+) ([a-z])")
+    valid_password = 0
+    for line in file:
+        parts = line.strip().split(":")
+        policy = parts[0].strip()
+        password = parts[1].strip()
+
+        matcher = pattern.match(policy)
+        first_index = int(matcher.group(1))
+        second_index = int(matcher.group(2))
+        letter = matcher.group(3)
+```
+
+
 ## Installation of pip on Debian-like
 
 ``` sh

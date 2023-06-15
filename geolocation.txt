@@ -1,0 +1,3 @@
+[Photon, search-as-you-type with OpenStreetMap](https://photon.komoot.io/)
+
+[GADM](https://gadm.org/data.html)

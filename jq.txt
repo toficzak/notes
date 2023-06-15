@@ -1,0 +1,47 @@
+ - manual: https://jqlang.github.io/jq/manual/
+ - tutorials:
+  - https://earthly.dev/blog/jq-select/#fn4
+  - https://github.com/rjz/jq-tutorial
+ - helpers:
+  - https://jqterm.com/?query=.
+ - json processor
+ - construct filters, which are applied to json
+ - unix-like thinking: input_json_document pipe> jq -filtering-> output-> stdout
+ - not actual unix filter, only mimics it. Another point for unix design greatness
+ - simplest filter: '.' - pretty print whole document
+ - selecting elements (properties or objects/arrays) '.field_name.nested_field_name'
+ - selecting arrays:
+  - specific element: jq '.[x]' where is 0-based index
+  - ranges: [x:y] - both inclusive
+  - one-side ranges [x:]
+  - negative one-side ranges [-x:] - iterates x from the end
+  - mixable with selecting elements: jq '.[3:4].name'
+  - for all elements in array: []
+ - '-r' returns raw string - no quotes (useful for copying)
+ - '-j' joins output
+ - array-construction: wrap with '[' and ']' to return JSON-valid array of results
+ - specify multiple filters with ',', but results are one filter after another
+ - use pipe '|' like in bash, filter after pipe is done for one batch of input, so all filters applied to each element, not like previously
+ - object-construction: {...}, just add key as "key:" and values as selectors (jq filters)
+ - built-ins:
+  - https://jqlang.github.io/jq/manual/#Builtinoperatorsandfunctions
+  - some useful on the first glance:
+   - length
+   - in
+   - sort
+   - unique
+   - reverse
+   - tostring
+ - map(...)
+  - unwrap array,
+  - apply a filter,
+  - rewrap results to array
+  - shorthand for [ .[] | ... ]
+  - just like java .map() in streams
+ - select
+  - built-in function
+  - takes boolean expression
+  - returns only results that match
+  - equivalent to java's .filter() method in streams or sql's WHERE clause
+  - example: map(select(.labels > 0)) - result will have only objects with labels property greater than 0
+

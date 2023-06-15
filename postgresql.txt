@@ -1,0 +1,62 @@
+Creating user
+
+create user username with encrypted password password;
+
+przejdź do odpowiedniej bazy \c databasename
+
+GRANT ALL PRIVILEGES ON TABLE tablename TO username;
+
+---
+.pg_service.conf
+
+```
+[kev]
+host=cloudpoc.test.com.au
+port=8367
+user=kevin
+dbname=kev_db
+password=kevpass123
+```
+
+i wtedy logujesz się do bazy: `psql "service=kev"`
+
+[Postgres easy login with pgpass and alias not working](https://stackoverflow.com/questions/62274814/postgres-easy-login-with-pgpass-and-alias-not-working)
+
+--- 
+Wystawianie publicznego portu
+
+W postgresql.conf:
+
+listen_addresses = 'localhost,188.199.182.35'             # what IP address(es) to listen on;
+
+- upewnić się, że nie jest zakomentowane
+- przyjmuje oddzieloną przecinkami listę adresów, na których ma nasłuchiwać połączeń z bazą, czyli w tym wypadku podajemy adres serwera (uzyskany np. w konsoli deweloperskiej)
+
+W pg_hba.conf:
+
+# IPv4 local connections:
+
+host    all             all             127.0.0.1/32            md5
+
+host    all             all             185.314.125.31/32         md5 # office
+
+host    all             all             29.32.47.84/32          md5 # vpn location
+
+Ten plik definiuje **kto** i **jak** może się zalogować do bazy. Tak więc dodajemy ip biura(whatismyip) oraz np. ip vpn'a.
+
+---
+strefy czasowe:
+
+Sprawdzanie dostępnych stref czasowych:
+
+```sql
+SELECT * FROM pg_timezone_names;
+```
+
+And `set` as below given example:
+
+```sql
+ALTER DATABASE postgres SET timezone TO 'Europe/Berlin';
+```
+
+[postgres default timezone](https://stackoverflow.com/questions/6663765/postgres-default-timezone)
