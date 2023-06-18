@@ -1,4 +1,4 @@
-- https://medium.com/codex/how-to-persist-and-backup-data-of-a-postgresql-docker-container-9fe269ff4334
+https://techblog.dac.digital/simplify-your-testing-with-easyrandom-50f3cbacd196
 - [https://use-the-index-luke.com](https://use-the-index-luke.com/)
 - https://www.baeldung.com/cs/decision-trees-20-questions?fbclid=IwAR3SwhxyjoZcptszUO3HoyLtzmHQdJEM8GCgCo0mbS_PT6Oz-6MXL31uWq8
 - 
@@ -77,3 +77,4 @@ System design questions:
 [SQL](https://morioh.com/topic/sql)
 
 [Top 50+ SQL Interview Questions and Answers](https://morioh.com/p/ddcbd3fe4983)
+>>>>>>> 5e4518abda5d223a5996620ec0259680c843c359
