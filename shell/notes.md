@@ -1,3 +1,8 @@
+List just one file name per line
+```bash
+ls -1
+```
+
 Check out current shell:
 
 ```bash
